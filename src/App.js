@@ -31,12 +31,9 @@ function LandRegistryApp() {
           setContract(contractInstance);
         } catch (error) {
           console.error("Could not connect to wallet", error);
-        }
-      }
-    };
+        }}};
 
-    initWeb3();
-  }, []);
+    initWeb3();}, []);
 
   const registerLand = async () => {
     if (!contract) return;
@@ -60,21 +57,20 @@ function LandRegistryApp() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
-        <h1 className="text-2xl font-bold mb-6">Land Registry dApp</h1>
-        
+  <div className="min-h-screen bg-gray-100 p-6">
+   <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md"
+    <h1 className="text-2xl font-bold mb-6">Land Registry dApp</h1>    
         {!walletConnected ? (
-          <button 
-            onClick={connectWallet} 
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+        <button 
+        onClick={connectWallet} 
+        className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
           >
             Connect Wallet
-          </button>
+      </button>
         ) : (
           <>
             <div className="mb-4">
-              <input
+            <input
                 type="text"
                 placeholder="Survey Number"
                 value={surveyNumber}

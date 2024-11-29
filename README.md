@@ -87,8 +87,8 @@ Before you begin, ensure you have the following installed:
 ### **View**
 
 
-<img src="/Users/yughjuneja/Desktop/Homepage.png" alt="Homepage">
 
+![HomePage](/Users/yughjuneja/Desktop/Property.png)
 ![Property Details](/Users/yughjuneja/Desktop/Property.png)
 ![Property Details](/Users/yughjuneja/Desktop/Property1.png)
 
